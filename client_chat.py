@@ -3,8 +3,8 @@ import threading
 import time
 import os
 
-SEND_URL = "http://zag-sms-darack.mypressonline.com/send.php"
-GET_URL  = "http://zag-sms-darack.mypressonline.com/get.php"
+SEND_URL = "http://xxx-xxx-xxxx.mypressonline.com/send.php"
+GET_URL  = "http://xxx-xxx-xxxx.mypressonline.com/get.php"
 
 username = input("Your name: ")
 
@@ -41,4 +41,5 @@ threading.Thread(target=fetch_messages_loop, daemon=True).start()
 while True:
     msg = input("> ")
     if msg.strip():
+
         send_message(msg)
